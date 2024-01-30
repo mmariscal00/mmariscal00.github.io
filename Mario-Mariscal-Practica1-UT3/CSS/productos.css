@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0.1em;
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+    min-height: 10vh;
+}
+
+body { /*Fondo*/
+    background-color: black;
+    min-height: 100vh;
+}
+
+figure { /*Fondo de MAPPA centrado*/
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    min-height: 70vh;
+}
+
+footer { /* Para tener copyright a la izq */
+    display: flex;
+    justify-content: flex-end;
+    min-height: 20 vh;
+    color:white;
+}
+
+ul { /* Para que quede el menu en horizontal*/
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(18, 75, 42);
+    border-radius: 5px;
+    list-style-type: none; /* Quitar los puntos de la lista desordenada*/
+}
+
+li {
+    flex-grow: 2; /* Para repartir el espacio en las listas que hay */
+    text-align: center; /* Para que el texto este centrado en su rectangulo */
+    padding: 10px;
+}
+
+a { /* Poner letras blancas del menu y quitar la linea blanca*/
+    color: white;
+    text-decoration: none;
+}
+
+article{
+    margin: 20px;
+    color: white;
+    background-color: rgba(18, 75, 42, 0.534);
+    border-radius: 10px;
+    min-height: 30vh;
+}
+
+div{
+    flex-grow: 2;
+}
+
+.polaroid {
+    width: 200px;
+    padding: 10px;
+    margin: 20px;
+    background: rgb(18, 75, 42);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.polaroid:hover {
+    transform: scale(1.1);
+}
+
+.polaroid img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.polaroid p {
+    margin: 10px 0 0;
+    text-align: center;
+}
+
+.Top-Anime{
+    display: flex;
+    justify-content: space-around;
+}
+
+h2{
+    writing-mode: vertical-lr;
+    text-align: center;
+    font-size: 50px;
+}
+

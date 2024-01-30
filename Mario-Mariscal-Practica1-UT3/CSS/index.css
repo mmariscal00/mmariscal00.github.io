@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0.1em;
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+    min-height: 10vh;
+}
+
+body { /*Fondo*/
+    background-color: black;
+    min-height: 100vh;
+}
+
+figure { /*Fondo de MAPPA centrado*/
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex; /*Registro a la drch y lo otro a la izq*/
+    min-height: 70vh;
+}
+
+footer { /* Para tener copyright a la izq */
+    display: flex;
+    justify-content: flex-end;
+    min-height: 20 vh;
+    color: white;
+}
+
+ul { /* Para que quede el menu en horizontal*/
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(18, 75, 42);
+    border-radius: 5px;
+    list-style-type: none; /* Quitar los puntos de la lista desordenada*/
+}
+
+li {
+    flex-grow: 2; /* Para repartir el espacio en las listas que hay */
+    text-align: center; /* Para que el texto este centrado en su rectangulo */
+    padding: 10px;
+}
+
+article {
+    padding: 20px; /* Para que no este pegado en el registro */
+}
+
+a { /* Poner letras blancas del menu y quitar la linea blanca*/
+    color: white;
+    text-decoration: none;
+}
+
+h2 {
+    margin: 10px 0;
+    padding-bottom: 5px; /* Distancia de la linea a registrate */
+    width: 180px;
+    color: white; /* Color registrate*/
+    border-bottom: 3px solid white; /* Color barra registrate*/
+    text-align: center;
+}
+label{
+    color: white;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    background: none; /* Quitar color de fondo del input*/
+    outline: none; /* Quitar caja cuando seleccionas el input*/
+    border: none; /* Quitar bordes del input*/
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 2px solid #bebed2; /* Poner borde inferior del input*/
+    margin: 15px 0 15px;
+}
+
+input:focus {
+    border-bottom: 2px solid #78788c;
+}
+
+.boton {
+    padding: 10px 20px;
+    color: #fff;
+    border: 3px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background: white; /* Con el cursor encima se pone el fondo del boton gris */
+    color: black; /* Con el cursor encima se pone la letra de color blanco */
+}
+
+.izq {
+    border: 2px solid rgb(18, 75, 42); /*Borde registro*/
+    background-color: rgb(18, 75, 42);  /* Fondo de registro*/
+    border-radius: 10px;
+    box-shadow: 3px 0px 8px rgb(18, 75, 42);
+    max-height: 70vh; /* Para que el borde no llegue hasta el fondo de la pagina*/
+    max-width: 20vw;
+    min-width: 20vw;
+}
+
+article{
+    margin: 20px;
+    color: white;
+    background-color: rgba(18, 75, 42, 0.534);
+    border-radius: 10px;
+    min-height: 30vh;
+}
+
+.contraseña{
+    display: flex;
+    text-align: center;
+}
+
+.checkbox{
+    width: 30px;
+}
+
+
+/* Estos 3 son para el tooltip*/
+.tooltip {
+    position: relative;
+    display: flex;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 200px;
+    background: linear-gradient(to right, #6a86d3, #3268b8);
+    color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px;
+    /*Esto es para que se salga del rectangulo de reistrate*/
+    position: absolute; 
+    left: 110%;
+    top: 20%;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+}
+
